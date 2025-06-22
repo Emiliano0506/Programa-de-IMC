@@ -5,8 +5,16 @@ int main()
     float altura,peso;
     printf("Ingrese su peso en kg:");
     scanf("%f",&peso);
+     while(peso<0){
+        printf("Vuelve a ingresar su peso:");
+        scanf("%f",&peso);
+    }
     printf("Ingrese su altura en metros:");
     scanf("%f",&altura);
+     while(altura<0){
+        printf("Vuelve a ingresar su altura:");
+        scanf("%f",&altura);
+    }
     float imc;
     imc=peso/(altura*altura);
     printf("Su indice de masa cormporal es: %.2f\n",imc);
